@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Photo from './assets/photo.jpeg'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -115,22 +114,43 @@ function App() {
         <p id='it'>We understand the importance of approaching each work integrally and <br />
         believe in the power of simple and easy communication</p>
         </div> <br />
+        <div className='contct'>
         <i className="fa-solid fa-phone" style={{color:'red'}}></i>
-        <div>
-        call me  
+        <div className='onee'>
+        Call me  
         <h2>+212 6 46 05 26 56</h2>
         </div>
         <i class="fa-regular fa-envelope" style={{color:'red'}}></i>
-        <div>
+        <div className='onee'>
         email us 
         <h2>Example@Example.com</h2>
         </div>
         <i class="fa-solid fa-location-crosshairs" style={{color:'red'}}></i>
-        <div>
+        <div className='onee'>
         Get me here
         <h2>12/A, London, Uk</h2>
         </div>
+        </div>
+        <form>
+          <label htmlFor="">How can I help you?</label><br />
+          <select name="" id="">
+            <option value="">Logo Design</option>
+            <option value="">Full branding</option>
+            <option value="">Web development</option>
+            <option value="">Digital Marketing</option>
+          </select><br /><br />
+          <label htmlFor="">Tell me more about your project</label><br />
+          <textarea name="" id=""></textarea><br /><br />
+          <label htmlFor="">Your Name</label><br />
+          <input type="text" /><br /><br />
+          <label htmlFor="">Your Email</label><br />
+          <input type="email" />
+        </form>
       </section>
+      <div className='brand'>
+      <img className='bckclr' src="https://vdemo.softhopper.studio/wp-content/uploads/2019/12/portfolio-v-8.jpg" alt="" />
+      <span><h4>winter season</h4></span>
+      </div>
     </>
   )
 }
